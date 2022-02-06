@@ -6,6 +6,7 @@ pub enum Tag {
     // keywords
     Class,
     Else,
+    Extends,
     If,
     InstanceOf,
     New,
@@ -63,6 +64,7 @@ impl Tag {
         match keyword {
             "class" => Some(Tag::Class),
             "else" => Some(Tag::Else),
+            "extends" => Some(Tag::Extends),
             "if" => Some(Tag::If),
             "instanceof" => Some(Tag::InstanceOf),
             "new" => Some(Tag::New),

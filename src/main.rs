@@ -1,10 +1,11 @@
 use std::fmt;
 
 pub mod lexer;
+pub mod parser;
 
 pub const INTEGER_LIMIT: u32 = 1 << 31;
 
-#[derive(Clone, Debug, PartialEq)]
+#[derive(Clone, Debug, Default, PartialEq)]
 pub struct Location {
     pub start: usize,
     pub end: usize,
